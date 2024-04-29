@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>TEST Emissions API RWCO</title>
+  </head>
+
+  <body>
+        <header>
+
+        </header>
+
+        <canvas id="average-example"></canvas>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.2/dist/Chart.min.js"></script>
+
+<script>
+
+
+const api_url = 'https://api.v2.emissions-api.org'
+        + '/api/v2/carbonmonoxide/average.json'
+        + '?country=DE&begin=2023-11-15&end=2023-12-25'
+
+window.onload = function () {
+
+    fetch(api_url)
+    .then(response => response.json())
+    .then(data => {console.log(data)})//Here is the array
+}
+
+
+</script>
+     
+    </footer>
+  </body>
+</html>
+
+
