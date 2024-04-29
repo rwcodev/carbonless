@@ -71,7 +71,7 @@ DAT.Globe = function(container, colorFn) {
 
   var overRenderer;
 
-  var imgDir = 'img/';
+  var imgDir = '';//Here was img but that cause errors
 
   var curZoomSpeed = 0;
   var zoomSpeed = 50;
